@@ -1,0 +1,84 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,300;1,700;1,900&display=swap');
+
+
+
+  .menu { background-color: #0055aa;
+    display: flex; 
+    justify-content: center;
+     height: 50px;
+    align-items: center;
+    gap: 1em; 
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    box-shadow:#a3a3a333 0px 0px 25px;
+  }
+.menu a {
+  color: white;
+  text-decoration: none;
+
+}
+
+  .body {
+        
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        
+}
+.titulo {
+
+        display: flex;
+        justify-content: center;
+        background-color: #0055aa;
+        color: white;
+        gap: 4em;
+        padding: 4em; 
+        
+}
+.imagem {
+    display: flex; 
+    align-items: center;
+    text-align: justify;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    padding: 70px;
+    gap: 3em;
+}
+
+.rodapé {
+    background-color: #0055aa;
+   text-align: center;
+   padding: 2em;
+}
+.botaowhatsapp { 
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  
+}
+.botaowhatsapp img {
+  width: 50px;
+  height: 50px;
+}
+
+.imagempagina img {
+  max-width: 100%;
+
+}
+.imagemconteudo { 
+  position:relative;
+}
+.obra {
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  background-color: #0055aa;
+  padding: 0.5em;
+  color: white;
+  border-radius: 0.5em;
+}
+  

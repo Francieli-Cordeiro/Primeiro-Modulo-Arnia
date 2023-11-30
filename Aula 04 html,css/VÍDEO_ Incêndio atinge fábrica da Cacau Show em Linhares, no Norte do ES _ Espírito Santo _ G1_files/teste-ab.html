@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- saved from url=(1068)https://s3.glbimg.com/v1/AUTH_14ce1dbebbe64b1e8e955809a085692d/web-components/teste-ab.html?url=aHR0cHM6Ly9zMy5nbGJpbWcuY29tL3YxL0FVVEhfMTRjZTFkYmViYmU2NGIxZThlOTU1ODA5YTA4NTY5MmQvd2ViLWNvbXBvbmVudHMvcGxheWVyLXdlYi1tdWx0aWNvbnRlbnQvcHJvZC93aWRnZXQuaHRtbD9wcm9kdWN0TmFtZT1nMSZwcm9kdWN0Q29sb3I9JTIzQzQxNzBDJmFydHdvcmtVUkw9aHR0cHMlM0ElMkYlMkZzMy5nbGJpbWcuY29tJTJGdjElMkZBVVRIXzU5ZWRkNDIyYzBjODRhODc5YmQzNzY3MGFlNGY1MzhhJTJGYXVkaW9wdWItcG9kY2FzdHMlMkZicyUyRjIwMjIlMkYxJTJGdCUyRkMyWWFGQlRBYU9qbzJPVTJSMVdnJTJGcG9kY2FzdC1vYXNzdW50by1uYXR1emEucG5nJmF1ZGlvVVJMPWh0dHBzJTNBJTJGJTJGdHJhZmZpYy5vbW55LmZtJTJGZCUyRmNsaXBzJTJGNjUxYTI1MWUtMDZlMS00N2UwLTkzMzYtYWM1YTAwZjQxNjI4JTJGMDQ1NjFiNDMtNzUzZC00Nzg0LThlMTktYWM4YjAwZTg2NDExJTJGZjJlMGU2ZDAtOTVhOS00MDUzLTgwNzQtYjBiMzAwM2M2ZGY5JTJGYXVkaW8ubXAzJmR1cmF0aW9uPTE1NjMuNDAyJmF1dGhvcj1HMSZlcGlzb2RlVGl0bGU9QW1heiVDMyVCNG5pYStzdWZvY2FkYStwZWxhK2Z1bWElQzMlQTdhKyZwb2RjYXN0VGl0bGU9TytBc3N1bnRvJnB1Ymxpc2hlZEF0PTIwMjMtMTEtMDdUMDMlM0E0MCUzQTQ4WiZzaGFyZVVybD1odHRwcyUzQSUyRiUyRmcxLmdsb2JvLmNvbSUyRnBvZGNhc3QlMkZvLWFzc3VudG8lMkY=&channel=desktop -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <style>
+        html,
+        body,
+        iframe {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <iframe id="podcast-iframe" frameborder="0" scrolling="no" width="320" height="210" referrerpolicy="origin" src="./widget.html"></iframe>
+
+    <script>
+        //A url é gerada na execução da function no arquivo functions/modules/audiopub-usecase.js.
+        const urlParam = window.location.search.match(/url=([a-zA-Z0-9+/]+={0,2})/)[1]
+        const channelParam = window.location.search.match(/channel=([a-zA-Z0-9_]+)/)[1]
+
+        const url = atob(urlParam)
+        url.urlPlayerMulticontent += '&channel=' + channelParam
+
+        function setIframeSource() {
+            const iframeList = document.querySelectorAll('#podcast-iframe')
+
+            iframeList.forEach((iframe) => {
+                iframe.src = `${url}&testgroup=n`
+            })
+        }
+
+        window.addEventListener('load', async () => {  
+            try {
+                setIframeSource()
+            } catch (e) {
+                console.error('audioPub => ', e.message)
+            }
+            window.postMessage('podcasts loaded', '*')
+        })
+    </script>
+
+
+</body></html>
