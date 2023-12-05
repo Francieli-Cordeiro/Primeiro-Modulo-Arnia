@@ -1,4 +1,5 @@
-const io = require('./io/io')
+
+const io = require("../io/io")
 let x = 1
 let acc = 0
 while (x <= 20) {

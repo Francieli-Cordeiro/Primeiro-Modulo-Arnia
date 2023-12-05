@@ -1,4 +1,4 @@
-const io = require('./io/io')
+const io = require('../io/io')
 
 let salario
 let reajuste //70 = 70% / 55 = 55%

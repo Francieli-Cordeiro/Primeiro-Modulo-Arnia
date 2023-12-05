@@ -1,8 +1,9 @@
-const io = require('./io/io')
+
+const io = require('../io/io')
 let anos
 let cigarrosDia
 let precoMaco
-let dias 
+let dias = 0
 let precoUnitario
 let gastoTotal
 
@@ -18,4 +19,4 @@ precoUnitario = precoMaco / 20
 
 gastoTotal = cigarrosDia * dias * precoUnitario
 
-io.write('O gasto total foi: ' + gastoTotal)
+io.write(`O gasto total foi: ${gastoTotal}`)

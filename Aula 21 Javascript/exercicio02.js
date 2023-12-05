@@ -1,5 +1,4 @@
-const io = require('./io/io')
-
+const io = require('../io/io')
 let a
 let b
 let c

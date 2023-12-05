@@ -1,4 +1,4 @@
-const io = require('./io/io')
+const io = require('../io/io')
 
 let anos
 let meses
