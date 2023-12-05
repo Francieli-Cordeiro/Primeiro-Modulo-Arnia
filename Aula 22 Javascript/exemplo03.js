@@ -8,3 +8,4 @@ const nome = io.read()
 
 io.write(`o nome informado foi: ${nome}`)
 }
+
