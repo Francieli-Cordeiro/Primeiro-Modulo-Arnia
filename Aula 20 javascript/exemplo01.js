@@ -1,14 +1,12 @@
 const io = require('../io/io')
+/* Programa de computador para escrever Brasil por 10 vezes. */
 
-let x = 0
+let iterador = 1
 
-io.write('Digite um numero natural')
-let n = io.readInt()
-io.write('Digite a frase que você deseja ')
-let frase = io.read()
+while (iterador <= 10) {//laço ou looping
+    io.write('Brasil')
 
-while (x < n) {
-    io.write(frase)
-    x++
+    iterador = iterador + 1 //altera o valor do iterador (soma + 1)
 }
+
 

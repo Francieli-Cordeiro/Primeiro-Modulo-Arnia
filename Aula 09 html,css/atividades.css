@@ -40,12 +40,12 @@
         
 }
 .imagem {
-    display: flex; 
+    display: ; 
     align-items: center;
     text-align: justify;
     justify-content:space-evenly;
     flex-wrap: wrap;
-    padding: 70px;
+    padding: 60px;
     gap: 3em;
 }
 

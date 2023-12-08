@@ -1,11 +1,19 @@
+/* Faça um programa que recebe do usuário um número inteiro n e uma
+frase e escreva esta frase n vezes */
 
-const io = require("../io/io")
-let x = 1
-let acc = 0
-while (x <= 20) {
-    io.write(`Escreva o ${x} numero`)
-    acc += io.readInt()
-    x++
-}
-const res = acc / 20
-io.write(`A média aritmetica dos numeros informados é: ${res}`)
+const io = require('../io/io')
+
+io.write('Digite um numero')
+const numero = io.readInt()
+
+io.write('Digite uma frase')
+const frase = io.read()
+
+let frases = 0
+
+while (frase < numero) {
+
+    io.write (frase< numero) 
+        io.write(frase)
+        frase++
+    }
