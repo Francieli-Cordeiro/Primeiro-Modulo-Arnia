@@ -1,6 +1,8 @@
 /*Faça um programa para escrever seu nome n vezes, sendo n
 fornecido pelo usuário*/
 
+/* rodou*/
+
 const io = require('../io/io')
 
 io.write('Defina a quantidade de repetição')

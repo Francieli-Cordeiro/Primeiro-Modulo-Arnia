@@ -1,3 +1,9 @@
+/*Escreva um algoritmo para ler uma temperatura em graus Fahrenheit,
+calcular e escrever o valor correspondente em graus Celsius (baseado na
+fórmula abaixo):*/
+
+/* rodou*/
+
 const io = require('../io/io')
 
 let c 

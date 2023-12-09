@@ -2,6 +2,8 @@
 município, o número de votos brancos, nulos e válidos. Calcular e escrever
 o percentual que cada um representa em relação ao total de eleitores.*/
 
+/*rodou*/
+
 const io = require('../io/io')
 
 let eleitoresMunicipio

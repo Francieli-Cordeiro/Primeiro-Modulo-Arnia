@@ -1,6 +1,8 @@
 
 /*Faça um programa para escrever seu nome 100 vezes*/
 
+/*rodou*/
+
 const io = require('../io/io')
 
 

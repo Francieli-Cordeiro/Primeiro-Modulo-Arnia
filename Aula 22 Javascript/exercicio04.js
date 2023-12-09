@@ -9,10 +9,9 @@ io.write('Digite um nome')
     for (let i = 1; 1 <=n; i++){
         io.write(Digite um nome)
     }
-    const nome = io.read()
+    const nome = io.readInt()
     if(n===''){
         cont++
- 
     }
 
 /* não ta rodando */
