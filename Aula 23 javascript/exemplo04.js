@@ -1,10 +1,10 @@
 const io = require('../io/io')
+
 let array =[10,11,3]
 
-for (let i = 0; i <10; i++){
-    io.write ('Escreva o ${i + 1 } número')
-let numero = io.readInt()
-    Array.push(numero)
+for (let i = 0; i <3; i++){
+    io.write ("digite um numero")
+let i = io.readInt()
 }
 
-io.write(array)
+io.write(i)

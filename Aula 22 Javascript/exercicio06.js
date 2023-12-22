@@ -1,6 +1,8 @@
 /* Faça um programa para receber 10 números do usuário e
 acusar qual deles é o maior número */
 
+/* rodou*/
+
 const io = require( '../io/io')
 
 let MValor = 0

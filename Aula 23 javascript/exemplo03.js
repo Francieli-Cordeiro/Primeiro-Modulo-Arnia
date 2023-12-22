@@ -8,9 +8,10 @@ Número: 1
 Número: 2
 Número: 3 */
 
-for(let i = 0; i < 5; i++) 
-{
-    io.write('Digite o$(i+1});')
+for (let i = 0; i < 5; i++) {
+
+
+    io.write('Digite o ${i+1};')
     const numero = io.readInt()
     array.push(numero)
 }
