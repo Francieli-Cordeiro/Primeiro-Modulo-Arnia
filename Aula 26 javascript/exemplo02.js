@@ -7,7 +7,7 @@ io.write (' Esta e uma função Tradicional')
 
 funcaoTradicional()
 
-const function() {
+const function () {
     io.write('esta e uma funcao anonima')
 
 }
