@@ -1,0 +1,48 @@
+<!--Criar um formulário de cadastro de
+Produto onde todos os campos devem
+ser obrigatórios.
+- Opções do select de categoria:
+Alimento, Limpeza e Higiene
+- Sombra dos cards: 0px 1px 6px 0px
+#00000040
+- Cor principal: #00a7e9
+- Fonte: Poppins
+- Os campos do formulário devem ser
+obrigatórios -->
+
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <script src="exercicio01.js" defer></script>
+    <link rel="stylesheet" href="exercicio01.css" />
+    <title>Cadastro de Produto</title>
+  </head>
+  <body>
+    <h1>Cadastro de Produto</h1>
+    <form id="formulario">
+      <label for="codigo">Código</label>
+      <input type="number" name="codigo" id="codigo" required/>
+      <label for="nome">Nome</label>
+      <input type="text" name="nome" id="nome" required/>
+      <label for="">Categoria</label>
+      <select class="categoria">
+        <option value="">Selecione a categoria desejada</option>
+        <option value="Eletronico">Eletrônico</option>
+        <option value="Limpeza">Limpeza</option>
+        <option value="Moveis">Móveis</option>
+      </select>
+      <label for="preco">Preço</label>
+      <input type="number" name="preco" id="preco" required />
+      <label for="quantidade">Quantidade</label>
+      <input type="number" name="quantidade" id="quantidade" required/><br />
+
+      <button type="submit" class="botao">Cadastrar</button>
+    </form>
+
+    <div class="resultado"></div>
+  </body>
+</html>
+
+
