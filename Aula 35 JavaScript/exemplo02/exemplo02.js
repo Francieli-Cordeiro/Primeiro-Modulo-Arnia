@@ -12,5 +12,5 @@ formulario.addEventListener('submit', (evento) => {
     console.log(soma)
     
     const divResultado = document.querySelector('#resultado')
-    divResultado.innerHTML = `A soma dos números é: ${soma}`
+    divResultado.innerHTML = A soma dos números é: ${soma}
 })

@@ -14,7 +14,6 @@ obrigatórios -->
 <html lang="PT-BR">
   <head>
     <meta charset="UTF-8" />
-    
     <script src="exercicio01.js" defer></script>
     <link rel="stylesheet" href="exercicio01.css" />
     <title>Cadastro de Produto</title>
@@ -27,11 +26,11 @@ obrigatórios -->
       <label for="nome">Nome</label>
       <input type="text" name="nome" id="nome" required/>
       <label for="">Categoria</label>
-      <select class="categoria">
+      <select class ="categoria" id="categoria" name="categoria" required>
         <option value="">Selecione a categoria desejada</option>
-        <option value="Eletronico">Eletrônico</option>
+        <option value="Alimento">Alimento</option>
         <option value="Limpeza">Limpeza</option>
-        <option value="Moveis">Móveis</option>
+        <option value="Higiene">Higiene</option>
       </select>
       <label for="preco">Preço</label>
       <input type="number" name="preco" id="preco" required />
